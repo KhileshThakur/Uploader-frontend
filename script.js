@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/auth";
+const API_URL = "https://uploader-backend-ghlp.onrender.com/api/auth";
 
 async function register() {
     const name = document.getElementById("signupName").value.trim();

@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000/api/media";
+const API_URL = "https://uploader-backend-ghlp.onrender.com/api/media";
 const TOKEN = localStorage.getItem("token");
 
 let selectedFile = null;
