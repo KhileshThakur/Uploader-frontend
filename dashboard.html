@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Upload Your Media</h2>
+
+        <div class="upload-box" onclick="document.getElementById('fileInput').click()">
+            Click to Select a File
+        </div>
+        <input type="file" id="fileInput" style="display: none" onchange="handleFileSelect(event)">
+
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+
+        <button onclick="uploadFile()">Upload</button>
+
+        <h3>Uploaded Files</h3>
+        <div id="uploadedFiles"></div>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
